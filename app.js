@@ -47,3 +47,13 @@ const reviews = [
   const prevBtn = document.querySelector('.prev-btn');
   const nextBtn = document.querySelector('.nextBtn');
   const randomBtn = document.querySelector('.randomBtn');
+
+  // set starting item
+  let currentItem = 0;
+
+  // load initial item
+
+  window.addEventListener('DOMContentLoaded', function(){
+    const item = reviews[currentItem];
+    img.src= item.img;
+  });
