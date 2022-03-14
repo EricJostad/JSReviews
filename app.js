@@ -45,8 +45,8 @@ const job = document.getElementById('job');
 const info = document.getElementById('info');
 
 const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.nextBtn');
-const randomBtn = document.querySelector('.randomBtn');
+const nextBtn = document.querySelector('.next-btn');
+const randomBtn = document.querySelector('.random-btn');
 
 // set starting item
 let currentItem = 0;
@@ -67,9 +67,9 @@ function showPerson(person){
   info.textContent = item.text;
 }
 
-// ashow next person
+// show next person
 
 nextBtn.addEventListener('click', function(){
-  currentItem++
+  currentItem++;
   showPerson(currentItem);
-})
+});
